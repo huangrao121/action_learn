@@ -1,0 +1,14 @@
+name: Hello workflow
+
+on: 
+  push: 
+    branches:
+      - main
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest 
+    steps: 
+      - name: Print Hello Message  # 步骤名称
+        run: echo "🎉 Hello from GitHub Actions!"  # 执行的命令
+  
